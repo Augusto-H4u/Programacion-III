@@ -12,8 +12,9 @@
 
         <main>
             <section id="Informacion_actividad">
+                <h2>Informacion de la actividad</h2>
                 <fieldset>
-                    <legend>Informacion actividad seleccionada</legend>
+                    <legend>Detalles</legend>
                     <label for="actividad">Actividad: </label>
                     <input type="text" id="actividad" name="actividad" placeholder="Futbol" disabled> <br><br>
                     <label for="lugar">Lugar: </label>
@@ -26,6 +27,7 @@
             </section>
             <br>
             <section id="inscripcion">
+                <h2>Datos de inscripcion</h2>
                 <form action="Creación_de_inscripciones.html" method="post">
                     <fieldset>
                         <legend>Formulario inscripcion</legend>
@@ -63,7 +65,7 @@
                                 <label for="masculino">Masculino</label>
                                 <input type="radio" id="nb" name="sexo" value="NB" required>
                                 <label for="nb">No Binario</label>
-                            </li> <br>
+                            </li>
 
                             <li>
                                 <label for="nivel">Nivel: </label>
@@ -80,7 +82,7 @@
                                 <label for="exp">Si</label>
                                 <input type="radio" name="experiencia" id="no_exp" value="NO" required>
                                 <label for="no_exp">No</label>
-                            </li> <br>
+                            </li>
 
                             <li>
                                 <label for="observaciones">Observaciones: </label><br>
@@ -90,11 +92,11 @@
                             <li>
                                 <input type="checkbox" id="condiciones" checked required>
                                 <label for="condiciones">¿Acepta las condiciones de inscripción?</label>
-                            </li> <br>
+                            </li>
 
-                            <input type="submit" value="Guardar">
-                            <input type="reset" value="Cancelar">
                         </ul>
+                        <input type="submit" value="Guardar">
+                        <input type="reset" value="Cancelar">
                     </fieldset>
                 </form>
             </section>
