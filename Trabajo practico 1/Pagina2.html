@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Inscripción </title>
+    </head>
+
+    <body>
+        <header>
+            <h1>Inscripción actividad deportiva</h1>
+        </header>
+
+        <main>
+            <section id="Informacion_actividad">
+                <fieldset>
+                    <legend>Informacion actividad seleccionada</legend>
+                    <label for="actividad">Actividad: </label>
+                    <input type="text" id="actividad" name="actividad" placeholder="Futbol" disabled> <br><br>
+                    <label for="lugar">Lugar: </label>
+                    <input type="text" id="lugar" name="lugar" placeholder="Complejo Deportivo Universitario – Cancha de fútbol" size="43" disabled> <br><br>
+                    <label for="día">Dia: </label>
+                    <input type="text" id="día" name="día" placeholder="Lunes y miércoles" disabled> <br><br>
+                    <label for="horario">Horarios: </label>
+                    <input type="text" id="horario" name="horario" placeholder="18 - 20hs" disabled> <br><br>
+                </fieldset>
+            </section>
+            <br>
+            <section id="inscripcion">
+                <form action="Creación_de_inscripciones.html" method="post">
+                    <fieldset>
+                        <legend>Formulario inscripcion</legend>
+                        <ul>
+                            <li>
+                                <label for="nom_ap">Apellido y nombre: </label>
+                                <input type="text" maxlength="100" id="nom_ap" name="nom_ap" placeholder="Augusto Trainer" required>
+                            </li>
+
+                            <li>
+                                <label for="dni">DNI (sin puntos): </label>
+                                <input type="number" id="dni" name="dni" min="00000001" max="99999999" placeholder="50.000.000" required>
+                            </li>
+
+                            <li>
+                                <label for="fec_nac">Fecha de nacimiento: </label>
+                                <input type="date" id="fec_nac" name="fec_nac" required>
+                            </li>
+
+                            <li>
+                                <label for="email">Correo electrónico: </label>
+                                <input type="email" id="email" name="email" placeholder="maxverstappen@gmail.com" size="25" required>
+                            </li>
+
+                            <li>
+                                <label for="telefono">Telefono: </label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="3834064060" required>
+                            </li>
+
+                            <li>
+                                <p>Sexo: </p>
+                                <input type="radio" id="femenino" name="sexo" value="F" required>
+                                <label for="femenino">Femenino</label>
+                                <input type="radio" id="masculino" name="sexo" value="M" checked required>
+                                <label for="masculino">Masculino</label>
+                                <input type="radio" id="nb" name="sexo" value="NB" required>
+                                <label for="nb">No Binario</label>
+                            </li> <br>
+
+                            <li>
+                                <label for="nivel">Nivel: </label>
+                                <select id="nivel">
+                                    <option value="inicial">Inicial</option>
+                                    <option value="intermedio">Intermedio</option>
+                                    <option value="avanzado">Avanzado</option>
+                                </select>
+                            </li>
+
+                            <li>
+                                <p>¿Posee experiencia previa? </p>
+                                <input type="radio" name="experiencia" id="exp" value="SI" checked required>
+                                <label for="exp">Si</label>
+                                <input type="radio" name="experiencia" id="no_exp" value="NO" required>
+                                <label for="no_exp">No</label>
+                            </li> <br>
+
+                            <li>
+                                <label for="observaciones">Observaciones: </label><br>
+                                <textarea id="observaciones"></textarea>
+                            </li>
+
+                            <li>
+                                <input type="checkbox" id="condiciones" checked required>
+                                <label for="condiciones">¿Acepta las condiciones de inscripción?</label>
+                            </li> <br>
+
+                            <input type="submit" value="Guardar">
+                            <input type="reset" value="Cancelar">
+                        </ul>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>@Deportes UNCA - 2026</p>
+        </footer>
+    </body>
+</html>
