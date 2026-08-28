@@ -1,0 +1,36 @@
+h1 {
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+    text-align: center;
+}
+
+section > h2{
+    font-family: Arial, sans-serif;
+    font-size: 2rem;
+}
+
+table tr > th, table tr > td {
+    background-color: bisque !important;
+    border: 3px solid #363232 !important;
+}
+
+.table-responsive + button:hover{
+    background-color: #dc3545 !important;
+}
+
+table tr:first-child th{
+    background-color: rgb(252 182 131 / 0.95) !important;
+}
+
+.card{
+    background-color: rgb(248 240 213 / 0.95);
+}
+
+table tr:not(:first-child):hover td{
+    background-color: #f5d09e !important;
+}
+
+section > h2::before {
+    content: "📌 ";
+    font-size: 1.2rem;
+}

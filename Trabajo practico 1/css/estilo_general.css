@@ -1,0 +1,17 @@
+body{
+    background-color: #ffe6bd;
+
+}
+
+.card-body, .list-group-item {
+    background-color: burlywood;
+}
+
+strong{
+    color:#282828;
+}
+
+::selection {
+    background-color: lightslategrey;
+    color: burlywood;
+}

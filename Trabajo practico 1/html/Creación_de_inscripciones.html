@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Inscripciones realizadas</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="../css/estilo_general.css">
+        <link rel="stylesheet" href="../css/mis_inscripciones.css">
+
+    </head>
+    <body class="d-flex flex-column min-vh-100">
+        <header>
+            <nav class="navbar bg-dark border-bottom border-secondary shadow-sm py-2" data-bs-theme="dark">
+                <div class="container-fluid d-flex justify-content-between align-items-center">
+
+                    <a href="Pagina1.html" class="btn btn-outline-light btn-sm" title="Volver al inicio">
+                        <i class="bi bi-house-door-fill fs-4"></i>
+                    </a>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <span class="text-light small d-flex align-items-center gap-1">
+                            <i class="bi bi-person-circle fs-5"></i>
+                            <span>Augusto_Trainer_17</span>
+                        </span>
+                        <a href="Pagina1.html" class="btn btn-outline-danger btn-sm py-1 px-2 d-flex align-items-center gap-1">
+                            <i class="bi bi-box-arrow-right"></i>
+                            <span>Cerrar sesión</span>
+                        </a>
+                    </div>
+
+                </div>
+            </nav>
+        </header>
+
+        <main class="container flex-grow-1">
+            <h1 class="h1 text-center fw-bold my-3">Inscripciones realizadas exitosamente</h1>
+            <section id="tabla_inscripciones" class="card p-4 shadow-sm">
+                <h2>Mis inscripciones: </h2>
+                <div class="table-responsive">
+                    <table class="table table-bordered">
+                        <tr>
+                            <th>Actividad</th>
+                            <th>Lugar</th>
+                            <th>Día</th>
+                            <th>Horario</th>
+                            <th>Estado</th>
+                        </tr>
+                        <tr>
+                            <td>Fútbol</td>
+                            <td>Complejo Deportivo Universitario – Cancha de fútbol</td>
+                            <td>Lunes y miércoles</td>
+                            <td>18 - 20 hs</td>
+                            <td>Activa</td>
+                        </tr>
+                        <tr>
+                            <td>Vóley</td>
+                            <td>Polideportivo Universitario – Cancha de vóley</td>
+                            <td>Lunes y viernes</td>
+                            <td>16- 18 hs</td>
+                            <td>Activa</td>
+                        </tr>
+                    </table>
+                </div>
+                <button id="btn_cancelar_inscripcion" name="cancelar_inscripcion" class="btn btn-dark btn-md d-block me-auto mt-3"> Cancelar inscripción </button>
+            </section>
+        </main>
+        <div class="bg-dark text-white border-top border-2 border-secondary mt-5" data-bs-theme="dark">
+            <footer class="py-4">
+                <p class="text-center text-secondary-emphasis mb-0">© 2026 Deportes UNCA – Todos los derechos reservados</p>
+            </footer>
+        </div>
+    </body>
+</html>
