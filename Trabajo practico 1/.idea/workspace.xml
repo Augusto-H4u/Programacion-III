@@ -5,10 +5,28 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4b3c53dc-ac81-4d3e-aa95-72e6e10c6afc" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/css/mis_inscripciones.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/mis_inscripciones.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Creación_de_inscripciones.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Creación_de_inscripciones.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Pagina1.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Pagina1.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html/Pagina2.html" beforeDir="false" afterPath="$PROJECT_DIR$/html/Pagina2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imagenes/Atletismo.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imagenes/Basquet.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imagenes/Futbol.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Imagenes/Voley.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/estilo_general.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/inscripciones.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/css/mis_inscripciones.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/.idea/Trabajo practico 1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/.idea/inspectionProfiles/profiles_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Creación_de_inscripciones.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Pagina1.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/Pagina2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/gestion_act_deportivas.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/gestion_participantes_form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/js/validaciones.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,17 +45,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;TP3-JS-Parte1&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "codeWithMe.voiceChat.enabledByDefault": "false",
+    "git-widget-placeholder": "TP3-JS",
+    "nodejs_package_manager_path": "npm"
   }
-}</component>
+}]]></component>
   <component name="RunManager">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="Trabajo practico 1" />
@@ -223,6 +241,7 @@
       <workItem from="1789165298588" duration="14280000" />
       <workItem from="1789218856311" duration="11041000" />
       <workItem from="1789255879967" duration="1091000" />
+      <workItem from="1789306362825" duration="616000" />
     </task>
     <servers />
   </component>
