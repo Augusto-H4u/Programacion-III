@@ -1,0 +1,110 @@
+# Creacion registros
+
+# 1. Crear y guardar al menos tres actividades deportivas
+actividad1 = ActividadesDeportivas(nombre="Futbol", descripcion="Actividad deportiva futbol", lugar="Cancha central", cupo=30)
+actividad1.save()
+
+ActividadesDeportivas.objects.create(nombre="Basquet", descripcion="Actividad deportiva basquet", lugar="Cancha oeste", cupo=10)
+
+<ActividadesDeportivas: Basquet>
+
+ActividadesDeportivas.objects.create(nombre="Voley", descripcion="Actividad deportiva voley", lugar="Cancha Este", cupo=18)
+
+<ActividadesDeportivas: Voley>
+-------------------------------------------------------------------------------------------------------------------------------------------
+# 2. Crear y guardar al menos dos horarios para una de las actividades deportivas.
+basquet = ActividadesDeportivas.objects.get(nombre="Basquet")
+Horario.objects.create(actividad=basquet, dia="Jueves", hora_inicio= "18:00", hora_fin="20:00")
+
+<Horario: Basquet de 18:00 a 20:00>
+
+Voley = ActividadesDeportivas.objects.get(nombre="Voley")   
+Horario.objects.create(actividad=Voley, dia="Viernes", hora_inicio= "14:00", hora_fin="16:00")
+
+<Horario: Voley de 14:00 a 16:00>
+
+Horario.objects.create(actividad=Voley, dia="Lunes", hora_inicio= "11:00", hora_fin="13:00")  
+
+<Horario: Voley de 11:00 a 13:00>
+
+Horario.objects.create(actividad=basquet, dia="Martes", hora_inicio= "17:00", hora_fin="19:00")
+
+<Horario: Basquet de 17:00 a 19:00>
+-------------------------------------------------------------------------------------------------------------------------------------------
+# 3. Crear y guardar al menos tres inscripciones asociadas a los horarios disponibles.
+horario1 = Horario.objects.get(dia="Jueves")                                                    
+Inscripcion.objects.create(nombre="Max", apellido="Verstappen", dni=13556987, horario=horario1)
+
+<Inscripcion: Max Verstappen dni: 13556987>
+
+Inscripcion.objects.create(nombre="Augusto", apellido="Trainer", dni=43765848, horario=horario1)
+<Inscripcion: Augusto Trainer dni: 43765848>
+
+horario2 = Horario.objects.get(dia="Lunes")
+Inscripcion.objects.create(nombre="Leandro", apellido="Paredes", dni=54542754, horario=horario2)
+
+<Inscripcion: Leandro Paredes dni: 54542754>
+
+horario3 = Horario.objects.get(dia="Viernes")
+Inscripcion.objects.create(nombre="Lionel", apellido="Messi", dni=33456901, horario=horario3)    
+
+<Inscripcion: Lionel Messi dni: 33456901>
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+#4. Consultar y mostrar todas las actividades deportivas registradas.
+
+actividades = ActividadesDeportivas.objects.all()  
+for actividad in actividades: print(actividad)
+... 
+Futbol
+Basquet
+Voley
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+# 5. Consultar y mostrar los horarios correspondientes a una actividad deportiva determinada.
+
+voley = ActividadesDeportivas.objects.get(nombre="Voley")
+horarios_voley = Horario.objects.filter(actividad=voley)
+for horario in horarios_voley: print(horario)
+... 
+Voley de 14:00:00 a 16:00:00
+Voley de 11:00:00 a 13:00:00
+-------------------------------------------------------------------------------------------------------------------------------------------
+
+# 6. Filtrar y mostrar las inscripciones que se encuentren en estado Activa
+insc_acts = Inscripcion.objects.filter(estado__iexact="Activa")
+for inscripcion in insc_acts: print(inscripcion)
+... 
+Max Verstappen dni: 13556987
+Leandro Paredes dni: 54542754
+Lionel Messi dni: 33456901
+-------------------------------------------------------------------------------------------------------------------------------------------
+# 7. Consultar las inscripciones correspondientes a un horario determinado.
+inscripciones_jueves = Inscripcion.objects.filter(horario__hora_inicio="18:00", horario__hora_fin="20:00")
+for ins in inscripciones_jueves: print(ins)
+... 
+Max Verstappen dni: 13556987
+Augusto Trainer dni: 43765848
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# 8. Modificar el cupo de una actividad deportiva.
+ActividadesDeportivas.objects.filter(nombre__iexact="voley").update(cupo=15)
+
+voley = ActividadesDeportivas.objects.get(nombre__iexact="voley")   
+print(voley.cupo)
+15
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# 9. Cambiar el estado de una inscripción de Activa a Cancelada.
+inscripcion_max = Inscripcion.objects.get(nombre="Max", apellido="Verstappen")         
+inscripcion_max.estado = "CANCELADA"
+
+print(inscripcion_max.estado)
+CANCELADA
+
+-------------------------------------------------------------------------------------------------------------------------------------------
+# 10. Eliminar una inscripción de la base de datos.
+Inscripcion.objects.get(nombre__iexact="leandro", apellido__iexact="paredes").delete()
+
+(1, {'reservas.Inscripcion': 1})
