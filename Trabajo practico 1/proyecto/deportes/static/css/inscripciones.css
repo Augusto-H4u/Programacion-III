@@ -1,0 +1,51 @@
+#Informacion_actividad{
+    border-inline: 3px solid lightslategrey !important;
+}
+#inscripcion{
+    border-inline: 4px solid lightslategrey !important;
+}
+
+textarea{
+    resize: none;
+}
+
+.card {
+    background-color: #fdf5e6 !important;
+}
+
+.form-check-input:checked + .form-check-label {
+    font-weight: bold;
+    color: #0d6efd;
+}
+
+.form-control:focus{
+    background-color: wheat !important;
+    border: 1px solid #d9ccb0;
+}
+
+.form-control:focus:user-invalid{
+    background-color: #ffe5e5 !important;
+    border-color: #dc3545 !important;
+}
+
+.form-control:focus:user-valid{
+    background-color: #dcfce7 !important;
+    border-color: #22c55e !important;
+}
+
+.form-control:disabled {
+    background-color: #f1ebd9 !important;
+    color: #1a1a1a !important;
+    border: 1px solid #d9ccb0 !important;
+    font-weight: 500;
+}
+
+input[type="submit"]:hover{
+    background-color: #166913;
+    font-weight: bold;
+}
+
+input[type="reset"]:hover{
+    background-color: #dc3545;
+    font-weight: bold;
+}
