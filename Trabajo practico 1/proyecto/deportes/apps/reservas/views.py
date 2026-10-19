@@ -17,7 +17,7 @@ def agregar_actividad(request):
         if form.is_valid():
             form.save()
             messages.success(request, "¡La actividad ha sido ingresada con exito!")
-            return redirect('listar_actividades')
+            return redirect('reservas:listar_actividades')
     else:
         form = ActividadForm()
     return render(request, 'agregar_actividad.html', {'form': form})
